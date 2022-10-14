@@ -62,7 +62,7 @@ style_checkbox = gr.Checkbox(value=False,label="Tune Style(experimental)")
 
 
 examples  = [
-                ["Content/content_2.jpg","Styles/tyle_15.jpg",1.20,1.70,""], 
+                ["Content/content_2.jpg","Styles/style_15.jpg",1.20,1.70,""], 
                 ["Content/content_4.jpg","Styles/style_10.jpg",0.91,2.54,"style_checkbox"]
             
             ]
