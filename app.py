@@ -54,7 +54,7 @@ description = "Gradio Demo for Artistic Neural Style Transfer. To use it, simply
 article = "</br><p style='text-align: center'><a href='https://github.com/Mr-Hexi' target='_blank'>GitHub</a></p> "
 
 
-content_input = gr.inputs.Image(label="Upload an image to which you want the style to be applied.", shape= (512,512))
+content_input = gr.inputs.Image(label="Upload an image to which you want the style to be applied.",)
 style_input = gr.inputs.Image( label="Upload Style Image ",shape= (256,256), )
 style_slider = gr.inputs.Slider(0,2,label="Adjust Style Density" ,default=1,)
 content_slider = gr.inputs.Slider(1,5,label="Content Sharpness" ,default=1,)
