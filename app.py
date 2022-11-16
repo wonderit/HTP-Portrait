@@ -77,8 +77,8 @@ interface = gr.Interface(fn=style_transfer,
                          description=description,
                          article=article,
                          examples=examples,
-                         # enable_queue=True
+                         enable_queue=True
                          )
     
     
-interface.launch(inline=False)
+interface.launch()
