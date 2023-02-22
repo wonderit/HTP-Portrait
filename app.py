@@ -58,7 +58,7 @@ content_input = gr.inputs.Image(label="Upload an image to which you want the sty
 style_input = gr.inputs.Image( label="Upload Style Image ",shape= (256,256), )
 style_slider = gr.inputs.Slider(0,2,label="Adjust Style Density" ,default=1,)
 content_slider = gr.inputs.Slider(1,5,label="Content Sharpness" ,default=1,)
-style_checkbox = gr.Checkbox(value=False,label="Tune Style(experimental)")
+# style_checkbox = gr.Checkbox(value=False,label="Tune Style(experimental)")
 
 
 examples  = [
@@ -71,7 +71,8 @@ interface = gr.Interface(fn=style_transfer,
                                 style_input,
                                 style_slider ,
                                 content_slider,
-                                style_checkbox],
+                                # style_checkbox
+                                ],
                          outputs=gr.outputs.Image(),
                          title=title,
                          description=description,
