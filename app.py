@@ -49,8 +49,9 @@ def style_transfer(content_img,style_image, style_weight = 1, content_weight = 1
 
 
 
-title = "Artistic Neural Style Transfer Demo 🖼️"
-description = "Gradio Demo for Artistic Neural Style Transfer. To use it, simply upload a content image and a style image. [Learn More](https://www.tensorflow.org/tutorials/generative/style_transfer)."
+title = "HTP Portrait Style Transfer Demo 🖼️"
+description = ""
+# description = "Gradio Demo for Artistic Neural Style Transfer. To use it, simply upload a content image and a style image. [Learn More](https://www.tensorflow.org/tutorials/generative/style_transfer)."
 article = "</br><p style='text-align: center'><a href='https://github.com/Mr-Hexi' target='_blank'>GitHub</a></p> "
 
 
@@ -62,10 +63,15 @@ content_slider = gr.inputs.Slider(1,5,label="Content Sharpness" ,default=1,)
 
 
 examples  = [
-                ["Content/content_2.jpg","Styles/style_15.jpg",1.20,1.70,""], 
-                ["Content/content_4.jpg","Styles/Scream Edvard Munch.jpg",0.91,2.54,"style_checkbox"]
-            
-            ]
+                ["Content/wonbin.jpg","Styles/style_gogh.png",1.20,1.70,""],
+                ["Content/yoonjeong.png","Styles/style_gogh.png",1.20,1.70,""],
+                ["Content/wonbin.jpg","Styles/style_15.jpg",1.20,1.70,""],
+                ["Content/yoonjeong.png", "Styles/style_15.jpg", 1.20, 1.70, ""],
+                ["Content/wonbin.jpg","Styles/Scream Edvard Munch.jpg",0.91,2.54,"style_checkbox"],
+                ["Content/yoonjeong.png","Styles/Scream Edvard Munch.jpg",0.91,2.54,"style_checkbox"]
+
+
+]
 interface = gr.Interface(fn=style_transfer,
                          inputs=[content_input,
                                 style_input,
